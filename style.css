@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e9830f;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    position: relative; 
+    /*A posição relative determina que o elemento será 
+    posicionado na página.*/
+ 
+}
+
+footer {
+    background-color: #e9830f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Adicione isso ao seu arquivo CSS para estilizar o divisor e os botões */
+.nav-link-divider {
+    margin: 0 10px; /* Espaço entre o divisor e os elementos adjacentes */
+}
+
+/* CSS para o botão de contato */
+.btn-carrinho {
+    background-color: #e78c03;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animação de hover para o botão */
+.btn-carrinho:hover {
+    background-color: #16066d; /* Cor um pouco mais escura no hover */
+    transform: scale(1.05); /* Aumentar um pouco o tamanho no hover */
+}
+
+.btn-comprar {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px; /* Borda arredondada */
+    border-color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-shopping-cart:hover {
+    color: #e9830f !important;
+}
+
+    
+.rectangle {
+    width: 100%;
+    height: 40vh; 
+    background-color: orange; 
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+.card {
+    margin: 10px;
+    width: 300px; 
+    height: 300px; 
+    position: absolute; 
+    top: -185%; 
+    left: 700px; 
+    transform: translateY(-50%); 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px #ccc; 
+    background-color: white; 
+    padding: 20px; 
+}
+
+.gray-text {
+    color: gray; /* Define a cor do texto como cinza */
+}
+
+.price-lg{
+    font-size: 30px;
+}
+
+.rectangle h1 {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0 0 5px;
+    text-align: left;
+    padding: 50px;
+    margin-left: 160px;
+}
+
+
+.rectangle p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+    padding: 0px 180px 0; 
+}
+
+.sobre-nos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.sobre-nos h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sobre-nos h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 30px;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botoes a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ce7b16;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botoes a:hover {
+    background-color: #bb7e24;
+}
+
+
+.centro {
+    text-align: center; /* Centralizar horizontalmente o conteúdo dentro do elemento pai */
+}
+
+.botao-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e87b1d;;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.botao-voltar:hover {
+    background-color: #e79756; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #e87b1d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #e79756;
+}
+
+.contato {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contato_conosco {
+    text-align: center;
+    color: #555;
+}
+
+form {
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 20px 70px; /* Reduzi o padding para que o formulário não fique muito grande */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    text-align: left; 
+}
+
+.sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align:justify;
+    margin-left: 50px;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.sobre h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 5px;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilize a div do carrinho de compras */
+#carrinho {
+    position: fixed;
+    top: 50%; /* Define a posição verticalmente no meio da janela */
+    right: 20px; /* Define a posição à direita com uma margem de 20px */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    background-color: #f0f0f0; /* Cor de fundo do carrinho */
+    padding: 20px; /* Espaçamento interno do carrinho */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilize o botão "Adicionar ao Carrinho" dentro do carrinho */
+#carrinho .btn-carrinho {
+    display: block; /* Torna o botão um bloco para ocupar toda a largura */
+    margin-top: 10px; /* Espaço superior entre o botão e o preço total */
+}
+
+/* Reduza a margem inferior do elemento .container que envolve o conteúdo principal */
+.container.mt-5 {
+    margin-bottom: 0; /* Defina a margem inferior para 0 para remover o espaço em branco */
+}
+
+.card-cartao{
+    margin-top: -200%;
+}
+

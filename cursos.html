@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac | Cursos Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/ab42b7abd4.css" crossorigin="anonymous">
+    <title>Cursos Livres | Senac</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* Quebra para a próxima linha quando não couberem mais cartões na largura */
+            justify-content: space-between; /* Espaçamento uniforme entre os cartões */
+}
+
+        /* Estilos para o card */
+        .card {
+            width: calc(25% - 20px); /* Defina 25% da largura - 20px de margem entre os cards */
+            margin: 10px; /* Adicione uma pequena margem entre os cards */
+            /* Outros estilos do card permanecem os mesmos */
+           padding: 20px;
+        }
+
+        /* Estilos para a área de imagem do card */
+        .card-image {
+            background-size: cover; /* A imagem cobrirá todo o espaço da área de imagem */
+            width: 100%;
+            height: 150px; /* Altura da área de imagem */
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        /* Estilos para a área de conteúdo do card */
+        .card-content {
+            padding: 20px;
+        }
+
+        /* Estilos para o título do card */
+        .card-title {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            
+        }
+
+        /* Estilos para o texto do card */
+        .card-text {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Estilos para o botão do card */
+        .card-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilos para o botão do card ao passar o mouse */
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+        
+        header {
+        background-color: #e9830f;
+        color: white;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        position: relative; 
+        /*A posição relative determina que o elemento será 
+        posicionado na página.*/
+    
+    }
+
+    footer {
+        background-color: #e9830f;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .ultimas-noticias {
+    background-color: #5f6a75; /* Cor de fundo azul */
+    color: #FFFFFF; /* Cor do texto branco */
+    padding: 1px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.botoes {
+    text-align: center; /* Centraliza os botões na horizontal */
+}
+
+.botoes a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ce7b16;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botoes a:hover {
+    background-color: #bb7e24;
+}
+
+
+
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="img/senaclogo.png" alt="senac" width="100" height="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Senac</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cursos.html">Cursos Livres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="graduacao.html">Graduação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="posgraduacao.html">Pós-Graduação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tecnicos.html">Cursos Técnicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ead.html">Educação a Distância EAD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">                      </a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link-divider"></span> <!-- Adicione um divisor -->
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                    <div class="buttons-container text-end">
+                        <a href="cadastro.html" class="btn btn-outline-orange">Cadastrar</a>
+                        <a href="login.html" class="btn btn-outline-orange">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+
+    <div class="ultimas-noticias">
+        <h3>Cursos Livres</h3>
+    </div>
+<br>
+    <div class="card-container">
+        <!-- Cartão 1 -->
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/programacao.jpeg');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Jovem Programador</strong></h2>
+                <p class="card-text">Neste curso de Programação, ele é destinado a jovens com interesse na área de programação, nele você ira aprender as linguagens mais usadas atualmente, e poderá entrar no mercado de trabalho nessa área tão requisitada.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <!-- Cartão 2 -->
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/assistentefinanceiro.jpg');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Assistente Financeiro</strong></h2>
+                <p class="card-text">O curso de Assistente Financeiro capacita profissionais para prepará-los para prestar assistência ao departamento financeiro e tudo que envolva finanças de uma organização e auxiliar o processo de planejamento e controle de finanças.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/excel.webp');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Excel Básico, Intermediário e Avançado</strong></h2>
+                <p class="card-text">Neste curso de Excel Básico online, você vai aprender a planejar e trabalhar com planilhas, criar funções e fórmulas, formatação de células, planilhas inteligentes, gráficos e muito mais.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/lideranca.jpeg');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Liderança</strong></h2>
+                <p class="card-text">O curso de Liderança tem o principal objetivo de ajudar os gestores e líderes a desenvolverem competências, habilidades e planos de ações, características de suma importância para um gestor de qualquer tipo de negócio.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/photoshop.jpg');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Photoshop</strong></h2>
+                <p class="card-text">Este curso visa propiciar aos participantes conhecimentos para a utilização dos recursos do aplicativo Photoshop, para a criação e edição de imagens e aplicação em peças gráficas.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/rh.png');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Assistente de RH</strong></h2>
+                <p class="card-text">O curso tem por objetivo formar profissionais intraempreendedores e socialmente responsáveis, capazes de desempenhar atividades de recrutamento e seleção.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/seguranca.jpeg');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Segurança no Trabalho</strong></h2>
+                <p class="card-text">O objetivo do curso é formar profissionais Técnicos de Segurança do Trabalho para estimular a promoção da Qualidade de Vida no Trabalho.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/informatica.png');"></div>
+            <div class="card-content">
+                <h2 class="card-title"><strong>Informática Básica</strong></h2>
+                <p class="card-text">O curso de Informática Básica tem como objetivo geral qualificar os egressos para o uso básico de computadores e internet.</p>
+                <button class="card-button">Mais Informações</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="botoes">
+        <a href="index.html">Voltar</a>
+    </div>
+    <footer class="text-center mt-5">
+        <div class="copyright">
+            &copy; 2023 - Todos os Direitos Reservados
+        </div>
+        <div class="social-links mt-3">
+            <a href="https://www.instagram.com/senacsantacatarina/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/FaculdadeSenacCacador/?locale=pt_BR"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/SenacBrasil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+            <a href="https://br.linkedin.com/school/senac-brasil/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/user/senacnacional"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="contact-links mt-3">
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <p>Desenvolvido por Manuella Kuiawa</p>
+    </footer>
+</body>
+</html>
